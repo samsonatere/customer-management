@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -126,7 +127,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 
 MEDIA_URL = '/images/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'static/image')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/image')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -135,4 +136,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'samsonatere24@gmail.com'
-EMAIL_HOST_PASSWORD = 'Command2@open'
+EMAIL_HOST_PASSWORD = '********'
